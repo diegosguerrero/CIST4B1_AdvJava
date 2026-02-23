@@ -53,7 +53,7 @@ public class mazeproblem {
             return false;
         }
 
-        // case 2 dead end
+        // inside a wall
         if (pathways[x][y] == 1) {
             return false;
         }
@@ -82,12 +82,6 @@ public class mazeproblem {
                 return true;
         }
 
-        /* How it was before (Done with Prof during OH) - Moving left
-        if (x > 0 && pathways[x - 1][y] != 1 && pathways[x-1][y] != 2) 
-            solveMaze(pathways, x - 1, y)
-                return true;
-        */
-
         // Moving right
         if (x < pathways.length - 1 && pathways[x + 1][y] != 1 && pathways[x + 1][y] != 2) {
             if (solveMaze(pathways, x + 1, y))
@@ -104,6 +98,7 @@ public class mazeproblem {
             if (solveMaze(pathways, x, y + 1))
             return true;
         }
+        // case 2 dead end
         pathways[x][y] = 0;
         return false;
     }
