@@ -1,4 +1,4 @@
-# CIST4B1_AdvJava
+# CIST4B1 | Data Structures Using Advanced Java
 Repository to document my Java learning journey. This repository contains coursework for CIST04B1 - Data Structures Using Advanced Java, offered at West Valley College.
 
 I am a Latino Comp Sci student. This is my second year at Mission College and the 2nd semester at West Valley College. Hoping to transfer in Fall 2026! 
